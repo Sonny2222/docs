@@ -1,0 +1,68 @@
+---
+title: "Stacked Profiles: Manage Checkout Shipping and Payment"
+sidebarTitle: "Profiles"
+description: "Profiles store your shipping address and payment details so Stacked can complete checkout automatically. Learn how to create and manage profiles."
+---
+
+Profiles contain the personal and payment information Stacked uses to complete checkout — create one profile per identity or card you want to use. When a task reaches the checkout stage, it pulls everything it needs directly from the profile you assigned to it.
+
+## What Is a Profile?
+
+A profile is a saved bundle of information that represents one checkout identity. Instead of typing your details into every task manually, you create a profile once and reuse it across as many tasks as you like.
+
+Each profile bundles together:
+
+- **Personal details** — first name, last name, email address, and phone number.
+- **Shipping address** — the address where the order should be delivered.
+- **Billing address** — the address associated with your payment card (can match shipping).
+- **Payment card** — card number, expiry date, and CVV.
+
+## Profile Fields
+
+The table below lists every field in a profile, what it's used for, and whether it's required.
+
+| Field | Description | Required |
+|---|---|---|
+| **First Name** | Recipient first name | Yes |
+| **Last Name** | Recipient last name | Yes |
+| **Email** | Order confirmation email | Yes |
+| **Phone** | Contact number for delivery updates | Yes |
+| **Address Line 1** | Street address | Yes |
+| **Address Line 2** | Apartment, suite, unit number, etc. | No |
+| **City** | Delivery city | Yes |
+| **Postcode / ZIP** | Postal code | Yes |
+| **Country** | Delivery country | Yes |
+| **Card Number** | Full payment card number | Yes |
+| **Card Expiry** | Card expiry date in MM/YY format | Yes |
+| **CVV** | Card security code (3 or 4 digits) | Yes |
+
+## Creating a Profile
+
+<Steps>
+  <Step title="Open the Profiles tab">
+    Launch Stacked and click **Profiles** in the left-hand navigation to open the Profiles dashboard.
+  </Step>
+  <Step title="Create a new profile">
+    Click **New Profile** in the top-right corner. A blank profile form opens.
+  </Step>
+  <Step title="Fill in your details">
+    Complete every required field in the form — personal info, shipping address, billing address, and payment card. Double-check that your card number, expiry, and CVV are accurate before saving.
+  </Step>
+  <Step title="Save the profile">
+    Click **Save**. Your profile now appears in the Profiles list and can be selected when creating or editing tasks.
+  </Step>
+</Steps>
+
+## Profile Groups
+
+Profile groups let you organise multiple profiles under a single label so you can assign them to tasks in bulk. For example, you might create a group called **US Cards** containing all your US-address profiles, and another called **EU Cards** for European addresses.
+
+To create a profile group, open the **Profiles** tab, click **New Group**, give it a name, and drag your existing profiles into it. When setting up tasks, select the group name instead of a single profile to have Stacked rotate through all profiles in that group automatically.
+
+<Warning>
+  Your payment information is stored locally on your device and is never transmitted to Stacked's servers — it leaves your machine only to complete checkout directly on the target retail store.
+</Warning>
+
+<Tip>
+  Create separate profiles for different shipping addresses or cards to maximise coverage during high-demand drops. Running tasks with varied profiles reduces the chance of multiple orders being flagged and cancelled by a single retailer.
+</Tip>

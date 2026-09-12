@@ -1,0 +1,73 @@
+---
+title: "Stacked Proxies: Route Tasks to Avoid Detection and Bans"
+sidebarTitle: "Proxies"
+description: "Proxies route your bot tasks through different IP addresses to avoid detection and bans. Learn how to add proxies and set up proxy groups in Stacked."
+---
+
+Proxies are essential for running Stacked at scale — they route each task through a different IP address so retail sites cannot detect and block your automation. Without proxies, all of your tasks originate from your home IP, making it trivial for stores to identify and ban your activity.
+
+## Why Use Proxies?
+
+Retail sites protect their limited-edition drops with bot-detection systems that monitor for suspicious request patterns. The most common trigger is a high volume of requests from a single IP address. When a site spots this, it responds with:
+
+- **IP bans** — blocking your IP entirely, cutting off all tasks running through it.
+- **Rate limits** — throttling requests from your IP so tasks slow to a crawl and lose the drop.
+- **CAPTCHA or Queue-IT challenges** — serving friction pages that stall or block automated checkout.
+
+Proxies solve this by distributing your tasks across many different IP addresses, making each task look like a separate, organic visitor to the store. **Residential proxies** — sourced from real household internet connections — are the hardest for stores to detect and are strongly recommended for competitive drops and Queue-IT-protected sites.
+
+## Proxy Formats
+
+Stacked accepts proxies in the following formats. Paste them one per line when adding a proxy group:
+
+```text
+host:port
+host:port:username:password
+username:password@host:port
+```
+
+All three formats are supported interchangeably within the same proxy group. Use whichever format your proxy provider supplies.
+
+## Adding Proxies
+
+<Steps>
+  <Step title="Open the Proxies tab">
+    Launch Stacked and click **Proxies** in the left-hand navigation to open the Proxies dashboard.
+  </Step>
+  <Step title="Create a new proxy group">
+    Click **New Proxy Group** and give the group a descriptive name — for example, `Residential FR` or `DC Amazon`.
+  </Step>
+  <Step title="Paste your proxy list">
+    Paste your proxies into the text area, one proxy per line, using any of the supported formats listed above.
+  </Step>
+  <Step title="Save the group">
+    Click **Save**. The proxy group is now available for selection when creating or editing tasks.
+  </Step>
+</Steps>
+
+## Proxy Types
+
+Different proxy types offer different trade-offs between cost, speed, and detectability. Use the table below to choose the right type for each scenario:
+
+| Type | Description | Best For |
+|---|---|---|
+| **Residential** | Real household IPs assigned by ISPs. Highly trusted by retail sites and very difficult to detect or block. | Competitive drops, Queue-IT-protected sites, high-demand restocks |
+| **Datacenter** | Fast, low-cost IPs hosted in data centres. Easy to detect but effective when site defences are light. | Less competitive restocks, testing task configs |
+| **ISP** | Static IPs from ISP-owned ranges — residential quality with datacenter-level speed and stability. | Consistent, reliable performance across all drop types |
+
+## Testing Proxies
+
+Before every major drop, verify that your proxies are alive and performing well. In the Proxies tab, select a proxy group and click **Test**. Stacked will check each proxy for:
+
+- **Connectivity** — confirming the proxy responds successfully.
+- **Speed** — measuring round-trip latency so you can spot slow proxies before they cost you a cop.
+
+Any proxy that fails or returns high latency is flagged in the results. Remove or replace flagged proxies before you start your tasks.
+
+<Note>
+  Stacked does not sell or supply proxies. You must purchase proxies from a third-party proxy provider before adding them to the bot.
+</Note>
+
+<Tip>
+  Always test your proxies before a major drop to weed out slow or dead IPs. Even a single slow proxy assigned to a task can be the difference between a successful checkout and a missed drop.
+</Tip>

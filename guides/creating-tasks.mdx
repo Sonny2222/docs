@@ -1,0 +1,91 @@
+---
+title: "Configure and Run Automated Checkout Tasks in Stacked"
+sidebarTitle: "Creating Tasks"
+description: "Learn how to create a bot task in Stacked, configure product targeting, assign profiles and proxies, and start your first automated checkout attempt."
+---
+
+Creating a task is the core workflow in Stacked. Every automated checkout attempt starts here — you define the target product, assign your checkout profile and proxy group, configure your preferences, and let Stacked handle the rest. Once a task is running, Stacked monitors the product and fires the checkout sequence the moment stock is available.
+
+## Before You Start
+
+<Note>
+  Make sure you have the following in place before creating your first task:
+
+  - ✅ A **proxy group** configured in the Proxies tab
+  - ✅ At least one **profile** created with your shipping and payment details
+  - ✅ The **target product URL or keyword** for the item you want to cop
+</Note>
+
+## Creating a Task
+
+<Steps>
+  <Step title="Open the Tasks tab">
+    Launch Stacked and navigate to the **Tasks** tab in the main dashboard.
+  </Step>
+  <Step title="Click + New Task">
+    Click the **+ New Task** button in the top-right corner to open the task creation panel.
+  </Step>
+  <Step title="Select your target store">
+    Use the **Store** dropdown to select the retail site you want to target. Stacked supports 14+ stores including Fnac, Smyths Toys, Amazon, Cdiscount, and more.
+  </Step>
+  <Step title="Enter the product URL or keyword">
+    Paste the direct **product page URL** into the Product field. If the URL is not yet available (for an upcoming drop), enter a **keyword** that matches the product name — Stacked will search the site and target the matching listing.
+  </Step>
+  <Step title="Choose your size or variant">
+    Select the specific size or variant you want to purchase from the dropdown. Choose **Auto** to let Stacked automatically target your preferred size based on your profile settings.
+  </Step>
+  <Step title="Set quantity">
+    Set **Quantity** to `1` for a single item. Increase this number if you want to attempt multiple units in the same checkout flow (subject to site limits).
+  </Step>
+  <Step title="Select a Profile">
+    Choose the **Profile** to use at checkout. This profile supplies your name, shipping address, and payment details to the checkout form.
+  </Step>
+  <Step title="Select a Proxy Group">
+    Assign a **Proxy Group** to the task. Using a proxy protects your IP from rate-limiting and improves success rates on high-traffic drops.
+  </Step>
+  <Step title="Configure advanced options">
+    Expand **Advanced Options** if needed. You can enable **Retry on Failure** to automatically restart the task after an error, and set the **Task Mode** (e.g. Monitor + Checkout or Checkout Only).
+  </Step>
+  <Step title="Click Save">
+    Click **Save** to add the task to your task list. The task appears in the dashboard with a **Ready** status.
+  </Step>
+</Steps>
+
+## Starting a Task
+
+Once your task is saved, click the **Start** button next to it to begin execution. The status indicator updates in real time — you'll see it move through states such as **Monitoring**, **Carting**, **Checking Out**, and finally **Success** or **Failed**.
+
+The Stacked dashboard refreshes automatically so you always have a live view of every running task. If a task hits an anti-bot challenge, Stacked handles it automatically without any input from you.
+
+## Bulk Task Creation
+
+To increase your chances on high-demand drops, you can run multiple tasks simultaneously against the same product. There are two ways to do this:
+
+- **Duplicate a task** — right-click any existing task and select **Duplicate**. Assign a different profile and proxy group to the copy.
+- **Bulk Create** — click the **Bulk Create** button, enter the number of copies you want, and Stacked generates multiple tasks at once. You can then assign profiles and proxies in a single batch edit.
+
+Running multiple tasks with different profiles and proxies means each checkout attempt looks like a separate user, which significantly improves your overall success rate.
+
+## Stopping Tasks
+
+To pause a running task, click the **Pause** button next to it. The task holds its current state and resumes from where it left off when you click **Resume**.
+
+To stop a task entirely, click the **Stop** button. This terminates the task immediately and resets its status to **Ready**. You can restart it at any time.
+
+To stop all tasks at once, click **Stop All** in the toolbar at the top of the Tasks tab.
+
+<Tip>
+  For high-demand drops, create 5–10 tasks targeting the same product with different profiles and proxies to increase your checkout success rate.
+</Tip>
+
+## Next Step
+
+Once your tasks are set up, learn how to monitor drops in real time so Stacked acts the instant a product goes live.
+
+<Card
+  title="Drop Monitoring"
+  icon="radar"
+  href="/guides/drop-monitoring"
+>
+  Set up real-time product monitoring so Stacked triggers your checkout the moment stock drops.
+</Card>

@@ -1,0 +1,68 @@
+{
+  "projectType": "saas",
+  "projectName": "Tcktio",
+  "projectDescription": "Tcktio is an automated purchasing bot for limited-edition sneakers, streetwear, and rare collectibles that lets users cop drops faster than any human across dozens of supported retail stores.",
+  "theme": "almond",
+  "primaryColor": "#7c7c7c",
+  "lightColor": "#090909",
+  "darkColor": "#cacaca",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "User Guide",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "getting-access",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/tasks",
+              "concepts/profiles",
+              "concepts/proxies"
+            ]
+          },
+          {
+            "group": "Running the Bot",
+            "pages": [
+              "guides/creating-tasks",
+              "guides/account-generator",
+              "guides/drop-monitoring",
+              "guides/notifications"
+            ]
+          },
+          {
+            "group": "Supported Sites",
+            "pages": [
+              "sites/overview",
+              "sites/queue-it",
+              "sites/major-retailers"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "help/faq",
+              "help/troubleshooting"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Easy-to-use dashboard for managing all workflows in one place",
+    "Drop-beating performance with fast, reliable checkout execution",
+    "High-scale task execution across simultaneous drops",
+    "Automated account generator for supported retail sites",
+    "Built-in anti-bot challenge handling (Queue-IT and others)",
+    "Real-time SMS and email notification management",
+    "Support for 14+ retail sites including Amazon, Fnac, Smyths Toys, and more"
+  ],
+  "publicApiSurface": []
+}

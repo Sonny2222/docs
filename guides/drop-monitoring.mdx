@@ -1,0 +1,73 @@
+---
+title: "Monitor Drops and Restocks in Real Time with Stacked"
+sidebarTitle: "Drop Monitoring"
+description: "Stacked monitors product pages and restocks in real time. Learn how to set up monitoring tasks so Stacked acts the instant a product goes live."
+---
+
+Drop monitoring is one of Stacked's most powerful features — it watches product pages around the clock and fires your checkout task the moment a product becomes available. Whether you're targeting a scheduled sneaker drop, a limited toy restock, or a surprise release, monitoring mode keeps Stacked ready to act while you focus on other things.
+
+## How Monitoring Works
+
+When a task is set to monitoring mode, Stacked continuously polls the target product page at high frequency. The moment it detects that a product has gone in stock or a drop has gone live, the task automatically transitions from the monitoring phase straight into the cart and checkout sequence — with no manual input required from you.
+
+Stacked handles anti-bot challenges during the monitoring phase so your task stays alive and connected through the entire wait period.
+
+## Setting Up a Monitoring Task
+
+<Steps>
+  <Step title="Create a task as normal">
+    Follow the standard task creation flow in the **Tasks** tab. See [Creating Tasks](/guides/creating-tasks) for a full walkthrough.
+  </Step>
+  <Step title="Enter the product URL or keyword">
+    In the **Product** field, paste the direct product page URL. If the URL is not yet published (common for hyped drops), enter a keyword that matches the product name — Stacked will locate the listing once it appears.
+  </Step>
+  <Step title="Set Task Mode to Monitor + Checkout">
+    In the **Task Mode** dropdown, select **Monitor + Checkout**. This tells Stacked to hold in monitoring state and automatically trigger checkout the moment the product is available.
+  </Step>
+  <Step title="Configure your profile, proxy, and size preferences">
+    Assign your **Profile** and **Proxy Group** as you normally would. Set your preferred **Size** or select **Auto** so Stacked knows exactly what to target when it moves to checkout.
+  </Step>
+  <Step title="Start the task before the drop">
+    Click **Start** on the task before the expected drop time. Stacked enters monitoring mode immediately and stays active, polling the product page and waiting for the go signal.
+  </Step>
+</Steps>
+
+## Keyword Monitoring
+
+When the exact product URL is unknown ahead of the drop, keyword monitoring lets you target by product name instead. Enter a keyword — for example, `Jordan 4 Thunder` or `LEGO Millennium Falcon` — into the Product field when creating your task.
+
+Stacked searches the target site for listings that match the keyword. Once a matching product appears and is in stock, the task picks it up and moves straight to checkout. Keyword monitoring is especially useful for drops where retailers announce the product name but withhold the direct URL until the moment of release.
+
+## Monitoring Dashboard
+
+The **Monitoring Dashboard** gives you a live view of all your active monitoring tasks in one place. For each task you can see:
+
+- **Current state** — Waiting, Polling, In Stock, Carting, Checking Out, or Done
+- **Poll frequency** — how often Stacked is checking the product page (measured in requests per second)
+- **Time active** — how long the task has been running in monitoring mode
+- **Last checked** — the timestamp of the most recent poll
+
+Use the Monitoring Dashboard to confirm your tasks are healthy and actively polling before a drop begins.
+
+## Drop Timing Tips
+
+- Start monitoring tasks **15–30 minutes before** a scheduled drop to ensure everything is connected and polling before the rush.
+- Use **faster proxies** for monitoring tasks to minimize poll latency — every millisecond counts when a product goes live.
+- **Pre-load your payment info** in your profiles so the checkout form fills instantly when the task transitions from monitoring to purchasing.
+- **Enable notifications** so you receive an alert the moment a task triggers, even if you're not watching the dashboard.
+
+<Info>
+  Stacked's poll frequency automatically ramps up as a known drop time approaches, giving you the fastest possible reaction time right when it matters most.
+</Info>
+
+## Next Step
+
+Set up SMS, email, and Discord notifications so Stacked alerts you the moment a task checks out successfully.
+
+<Card
+  title="Notifications"
+  icon="bell"
+  href="/guides/notifications"
+>
+  Configure SMS, email, and Discord webhook alerts for successful checkouts and task events.
+</Card>

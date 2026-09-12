@@ -1,0 +1,67 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "Tcktio",
+  "theme": "almond",
+  "favicon": "https://media.brand.dev/99e6561f-1a7c-4a78-9192-edfa468104cb.png",
+  "colors": {
+    "primary": "#7c7c7c",
+    "light": "#090909",
+    "dark": "#cacaca"
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Join the Waitlist",
+      "href": "https://whop.com/checkout/plan_tEmqMBDGY9VlX"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "User Guide",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "getting-access",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/tasks",
+              "concepts/profiles",
+              "concepts/proxies"
+            ]
+          },
+          {
+            "group": "Running the Bot",
+            "pages": [
+              "guides/creating-tasks",
+              "guides/account-generator",
+              "guides/drop-monitoring",
+              "guides/notifications"
+            ]
+          },
+          {
+            "group": "Supported Sites",
+            "pages": [
+              "sites/overview",
+              "sites/queue-it",
+              "sites/major-retailers"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "help/faq",
+              "help/troubleshooting"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

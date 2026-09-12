@@ -1,0 +1,66 @@
+---
+title: "Stacked Tasks: Automate Checkout on Every Supported Store"
+sidebarTitle: "Tasks"
+description: "Tasks are the core unit of automation in Stacked. Learn what tasks are, how they work, and the settings you can configure for each task."
+---
+
+A task is the fundamental unit of automation in Stacked — each task represents one automated checkout attempt targeting a specific product on a supported store. Every time you want Stacked to buy something, you create a task to tell it exactly what to get, where to get it, and how to pay.
+
+## What Is a Task?
+
+Each task targets one product — identified by a URL or keyword — on one supported retail store. When you run a task, Stacked handles the entire purchase flow automatically, from the moment a product goes live to the final order confirmation.
+
+Here's what a single task does end to end:
+
+- **Monitoring** — Continuously checks the target store for the product to become available.
+- **Cart** — Instantly adds the product to cart the moment it drops.
+- **Checkout** — Fills in your shipping and payment details from the linked Profile and submits the order.
+
+Because tasks are independent units, you can run dozens or hundreds of them simultaneously, each hitting the same drop or different stores at the same time.
+
+## Task Settings
+
+When you create or edit a task, you configure the following settings:
+
+| Setting | Description |
+|---|---|
+| **Store** | The retail site to target (e.g., Fnac, Amazon, Smyths Toys). |
+| **Product** | A direct product URL or a keyword Stacked will search for on the store. |
+| **Size / Variant** | The product size or variant to add to cart. Set to **Auto** to let Stacked pick the first available option. |
+| **Quantity** | How many units to attempt to purchase in a single checkout run. |
+| **Profile** | The shipping and payment Profile Stacked uses to complete checkout. |
+| **Proxy Group** | The group of proxies to route this task's requests through. |
+| **Mode** | **Normal** for maximum speed, or **Stealth / Slow** to reduce detection risk on sites with aggressive bot protection. |
+| **Retry** | When enabled, automatically restarts the task if checkout fails, so you never miss a restock. |
+
+## Task States
+
+As a task runs, its status indicator updates in real time to show you exactly where it is in the checkout flow:
+
+| State | Meaning |
+|---|---|
+| **Idle** | The task has been created but has not been started yet. |
+| **Running** | The task is active and monitoring the store for the product. |
+| **Waiting for Product** | The product has been found but is not yet in stock — Stacked is polling until it goes live. |
+| **Adding to Cart** | The product is live and Stacked is adding it to cart. |
+| **Checking Out** | Cart has been secured and Stacked is submitting your shipping and payment details. |
+| **Success** | The order was placed successfully. Check your email for a confirmation. |
+| **Failed** | Checkout was not completed. If Retry is enabled, the task will restart automatically. |
+
+## Running Multiple Tasks
+
+Stacked executes all of your running tasks in parallel — there is no queue. This means you can launch 50 tasks targeting the same drop at the same time, each operating independently with its own proxy and profile.
+
+A few tips for scaling up effectively:
+
+- **Start small.** Run 5–10 tasks first to validate your settings, then duplicate and scale.
+- **Spread across proxy groups.** Assign different proxy groups to different batches of tasks to avoid putting all your requests through the same IPs.
+- **Duplicate tasks quickly.** Use the bulk-duplicate feature to clone a working task configuration across as many instances as you need.
+
+<Tip>
+  Use multiple tasks with different proxy groups to maximize your chances on competitive drops. Distributing requests across proxy groups reduces the risk of a single IP pool getting rate-limited or banned.
+</Tip>
+
+---
+
+Ready to put this into practice? See the step-by-step walkthrough in the [Creating Tasks](/guides/creating-tasks) guide.

@@ -1,0 +1,89 @@
+---
+title: "Configure SMS, Email, and Webhook Alerts in Stacked"
+sidebarTitle: "Notifications"
+description: "Configure SMS and email alerts in Stacked so you receive instant notifications when a task checks out successfully or encounters an issue."
+---
+
+Stacked's notification system keeps you informed in real time — receive SMS or email alerts the moment a task successfully checks out, so you never miss a cop even when you're not watching the dashboard. You can configure global notification settings or fine-tune alerts on a per-task basis.
+
+## Notification Types
+
+| Notification | When It Fires |
+|---|---|
+| **Successful Checkout** | A task completes checkout and an order is placed successfully |
+| **Task Failure** | A task encounters an error it cannot recover from automatically |
+| **Product In Stock** | A monitored product first becomes available on the target site |
+| **Drop Starting Soon** | An optional reminder sent before a scheduled drop time |
+
+## Setting Up Email Notifications
+
+<Steps>
+  <Step title="Open Settings">
+    Click the **Settings** icon in the Stacked dashboard sidebar to open the settings panel.
+  </Step>
+  <Step title="Navigate to Notifications">
+    Select the **Notifications** tab within Settings.
+  </Step>
+  <Step title="Toggle Email Notifications on">
+    Click the **Email Notifications** toggle to enable it. The toggle turns green when active.
+  </Step>
+  <Step title="Enter your email address">
+    Type the email address where you want to receive alerts into the **Email Address** field.
+  </Step>
+  <Step title="Click Save">
+    Click **Save** to store your email address and activate email notifications.
+  </Step>
+  <Step title="Send a test notification">
+    Click **Send Test Email** to trigger a test message. Check your inbox to confirm delivery. If it doesn't arrive within a minute, check your spam folder and verify the address is correct.
+  </Step>
+</Steps>
+
+## Setting Up SMS Notifications
+
+<Steps>
+  <Step title="Toggle SMS Notifications on">
+    In the **Notifications** settings panel, click the **SMS Notifications** toggle to enable it.
+  </Step>
+  <Step title="Enter your phone number">
+    Enter your phone number in the **Phone Number** field, including your country code — for example, `+33612345678` for a French number.
+  </Step>
+  <Step title="Click Send Verification Code">
+    Click **Send Verification Code**. Stacked sends a one-time code to the number you entered.
+  </Step>
+  <Step title="Enter the verification code">
+    Type the code from the SMS into the **Verification Code** field in Stacked.
+  </Step>
+  <Step title="Click Verify & Save">
+    Click **Verify & Save** to confirm your number and activate SMS notifications. Your number is now verified and ready to receive alerts.
+  </Step>
+</Steps>
+
+## Per-Task Notification Settings
+
+You can override your global notification settings for any individual task. This lets you silence alerts for low-priority tasks while keeping full notifications active for high-value drops.
+
+To configure notifications for a specific task:
+
+1. Open the task from the **Tasks** tab.
+2. Scroll to the **Notifications** section within the task settings.
+3. Toggle individual event types (Checkout Success, Failure, In Stock) on or off as needed.
+4. Click **Save** to apply your per-task preferences.
+
+Per-task settings always take priority over your global notification configuration.
+
+## Notification Webhooks
+
+Stacked also supports Discord webhooks, letting you send checkout notifications directly to a channel in your Discord server. Webhook messages include rich checkout cards with order details such as the product name, size, store, and order confirmation number.
+
+To set up a webhook:
+
+1. Copy your Discord channel's **Webhook URL** from Discord's channel settings (Edit Channel → Integrations → Webhooks).
+2. In Stacked, go to **Settings → Notifications → Webhook URL**.
+3. Paste the webhook URL into the field.
+4. Click **Save**.
+
+Stacked will now post a checkout card to that Discord channel whenever a task triggers a notification event.
+
+<Tip>
+  Enable Discord webhooks to get rich checkout cards with order details sent directly to your server — perfect for sharing cops with your team or keeping a log of successful orders.
+</Tip>

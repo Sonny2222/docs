@@ -1,0 +1,73 @@
+---
+title: "Generate Retail Site Accounts Automatically in Stacked"
+sidebarTitle: "Account Generator"
+description: "Use the Stacked account generator to create accounts on supported retail sites in bulk, ready to use for faster checkout during drops."
+---
+
+The Stacked account generator automates the process of creating accounts on supported retail sites, giving you a bank of ready-to-use accounts to speed up checkout. Instead of registering mid-drop — when every second counts — you arrive with accounts already in place and ready to go.
+
+## Why Generate Accounts?
+
+Pre-created accounts give you a meaningful edge during high-traffic drops:
+
+- **Skip registration at checkout** — signed-in users bypass the account creation step entirely, shaving seconds off your checkout time.
+- **Reduce friction** — saved addresses and payment preferences auto-fill at checkout, making the flow faster and less error-prone.
+- **Access faster checkout paths** — some supported stores offer accelerated or one-click checkout exclusively for logged-in users.
+- **Spread risk across accounts** — using multiple accounts across your tasks means a single flagged account doesn't kill your entire run.
+
+## Supported Sites for Account Generation
+
+Account generation is available for a select subset of Stacked's supported stores. Visit the [Sites Overview](/sites/overview) page for the full list of supported stores and their account generation status.
+
+## Generating Accounts
+
+<Steps>
+  <Step title="Open the Account Generator tab">
+    In the Stacked dashboard, click the **Account Generator** tab in the left-hand navigation.
+  </Step>
+  <Step title="Select the target site">
+    Use the **Site** dropdown to choose the retail store you want to generate accounts for.
+  </Step>
+  <Step title="Choose the number of accounts">
+    Enter how many accounts you want to generate in the **Quantity** field. Start with a smaller batch (10–20) to verify everything is working before scaling up.
+  </Step>
+  <Step title="Select a proxy group">
+    Choose a **Proxy Group** to route generation traffic through. Using proxies is strongly recommended to prevent your IP from being flagged or blocked by the target site.
+  </Step>
+  <Step title="Click Generate">
+    Click the **Generate** button to begin. Stacked starts creating accounts in the background using the details and proxies you've configured.
+  </Step>
+  <Step title="Monitor progress">
+    Watch the **Status Panel** at the bottom of the Account Generator tab. It shows accounts created, any failures, and the overall progress of the generation batch.
+  </Step>
+  <Step title="Review generated accounts">
+    Once the batch completes, your new accounts appear in the **Accounts** list. Each entry shows the site, username, creation date, and current status.
+  </Step>
+</Steps>
+
+## Using Generated Accounts
+
+Once accounts are generated, you can assign them directly to your tasks for a logged-in checkout flow:
+
+1. Open a task in the **Tasks** tab.
+2. In the task settings, find the **Account** field.
+3. Select the account you want to use from the dropdown (filtered by site).
+4. Save the task.
+
+When the task runs, Stacked logs in with the assigned account before proceeding to cart and checkout. This gives you the speed and checkout-path benefits of a signed-in session without any manual login step.
+
+## Account Health
+
+Not all generated accounts stay healthy indefinitely. Keep an eye on the following:
+
+- **Email verification** — some sites send a verification email before the account is fully active. Check your catch-all or generated inbox and verify accounts before drop day.
+- **Flagged accounts** — accounts created too quickly or without proxies may be flagged or soft-banned by the site. Flagged accounts show a warning status in your Accounts list.
+- **Refresh before drops** — run a quick health check on your accounts in the hours before a major drop to confirm they are still active and able to log in.
+
+<Warning>
+  Generating large volumes of accounts too quickly without proxies may trigger site-level bans on your IP address. Always use a residential proxy group for account generation to keep your activity clean.
+</Warning>
+
+<Tip>
+  Generate accounts a day or two before a major drop so they are aged and less likely to be flagged by the site's anti-fraud systems.
+</Tip>
