@@ -1,15 +1,55 @@
 ---
 title: "Generator"
 sidebarTitle: "Generator"
-description: "Generate accounts on supported sites."
+description: "Create store accounts automatically from your existing profiles."
 ---
 
+The generator creates store accounts for you, using the details held in the profiles you select. Instead of signing up by hand on each site, you point it at a store, choose which profiles to draw from, and let it run.
+
+## Supported stores
+
+Account generation is not available on every store Stacked supports. It currently works on:
+
+<CardGroup cols={3}>
+  <Card title="Auchan" horizontal />
+  <Card title="Cdiscount" horizontal />
+  <Card title="Cultura" horizontal />
+  <Card title="Fnac" horizontal />
+  <Card title="JouéClub" horizontal />
+  <Card title="La Grande Récré" horizontal />
+  <Card title="Monoprix" horizontal />
+</CardGroup>
+
 <Note>
-  This page is still being written.
+  On any other store, create your accounts manually and add them in [Accounts](/accounts).
 </Note>
 
-## What the generator does
+## Creating generator tasks
 
-## Running the generator
+Click **Create Tasks**. Every task you create in one go shares the same settings, so use the counter at the top to decide how many accounts you want to generate in this batch.
 
-## Results
+<Steps>
+  <Step title="Set how many tasks to create">
+    Use the **Tasks to create** counter. One task generates one account.
+  </Step>
+  <Step title="Pick the site">
+    **Site** is the only required field. Only the stores listed above appear here.
+  </Step>
+  <Step title="Choose which profiles to use">
+    Select a **Profile group**, then either pick one specific **Profile** or leave it on **Any** to draw from the whole group. The accounts are generated with the details held in those profiles.
+  </Step>
+  <Step title="Assign a proxy group">
+    Pick the **Proxy group** the tasks should run through.
+  </Step>
+  <Step title="Create">
+    Click **Create Task** and the tasks appear ready to run.
+  </Step>
+</Steps>
+
+<Tip>
+  Generating several accounts from a single profile is where the `random` name and `XXX` address placeholders from [Profile](/profile) earn their keep, since every account then carries different details.
+</Tip>
+
+<Note>
+  Next step: [Accounts](/accounts) to manage the accounts you have generated.
+</Note>
