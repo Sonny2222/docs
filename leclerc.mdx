@@ -1,15 +1,57 @@
 ---
 title: "E.Leclerc"
 sidebarTitle: "E.Leclerc"
-description: "Running Tcktio tasks on E.Leclerc."
+description: "Modes, checkout and setup notes for running Stacked on E.Leclerc."
 ---
 
+<CardGroup cols={2}>
+  <Card title="Modes" icon="sliders">
+    Normal · Fast · Generator
+  </Card>
+  <Card title="Checkout" icon="credit-card">
+    Not documented yet
+  </Card>
+</CardGroup>
+
+## Modes
+
+| Mode | Available |
+| --- | :-: |
+| Normal | ✅ |
+| Fast | ✅ |
+| Search | — |
+| Generator | ✅ |
+| Wait | — |
+
+**Fast** is the mode to run on E.Leclerc. Keep a few **Normal** tasks on the same drop as a fallback.
+
+**Generator** is available: create your E.Leclerc accounts from the [Generator](/generator) instead of signing up by hand.
+
+## Checkout
+
 <Note>
-  This page is still being written.
+  The checkout method for E.Leclerc has not been documented yet. It will be added here once confirmed.
 </Note>
 
-## Before you start
+## Setting up a task
 
-## Task setup
+The task form is the same on every store — see [Tasks](/tasks) for what each field does. For E.Leclerc:
 
-## Notes and limitations
+<Steps>
+  <Step title="Pick the site">
+    Select **E.Leclerc** in the Site dropdown.
+  </Step>
+  <Step title="Enter the product">
+    Paste the product URL or its SKU.
+  </Step>
+  <Step title="Choose the mode">
+    **Fast** for the drop itself, **Normal** on a few tasks as backup.
+  </Step>
+  <Step title="Attach your groups">
+    Profile group, account group and proxy group.
+  </Step>
+</Steps>
+
+<Note>
+  Store-specific notes will be added here as they come up: proxy types that work best, delays that hold on a drop, and anything E.Leclerc does differently.
+</Note>
