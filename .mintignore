@@ -5,3 +5,10 @@
 # Draft content
 drafts/
 *.draft.mdx
+concepts/
+guides/
+help/
+sites/
+tcktio-docs/
+sources/
+getting-access.mdx
