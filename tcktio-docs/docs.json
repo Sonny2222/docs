@@ -1,0 +1,58 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "Tcktio",
+  "theme": "almond",
+  "favicon": "https://media.brand.dev/99e6561f-1a7c-4a78-9192-edfa468104cb.png",
+  "colors": {
+    "primary": "#7c7c7c",
+    "light": "#090909",
+    "dark": "#cacaca"
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Join the Waitlist",
+      "href": "https://whop.com/checkout/plan_tEmqMBDGY9VlX"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "User Guide",
+        "pages": [
+          {
+            "group": "General",
+            "pages": [
+              "general/introduction",
+              "general/installation",
+              "general/requirements"
+            ]
+          },
+          "profile",
+          "generator",
+          "accounts",
+          {
+            "group": "Sites",
+            "pages": [
+              "sites/amazon",
+              "sites/auchan",
+              "sites/cdiscount",
+              "sites/cultura",
+              "sites/fnac",
+              "sites/joueclub",
+              "sites/king-jouet",
+              "sites/la-grande-recre",
+              "sites/leclerc",
+              "sites/micromania",
+              "sites/monoprix",
+              "sites/philibert",
+              "sites/queue-it",
+              "sites/smyths-toys"
+            ]
+          },
+          "faq"
+        ]
+      }
+    ]
+  }
+}
