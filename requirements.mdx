@@ -1,19 +1,61 @@
 ---
 title: "Requirements"
 sidebarTitle: "Requirements"
-description: "What you need before running your first task: webhook, proxies and API keys."
+description: "Set up your webhook, proxies and API keys before running your first task."
 ---
 
-<Note>
-  This page is still being written.
-</Note>
+Three things need to be in place before your first task: a Discord webhook for notifications, your proxies, and at least one captcha provider key. The webhook and the API keys both live in the bot's **Settings** tab.
 
 ## Webhook
 
+Stacked posts checkout notifications to a Discord webhook, so you know the moment an order goes through.
+
+<Steps>
+  <Step title="Create the webhook in Discord">
+    In your Discord server, open **Server Settings > Integrations > Webhooks**, then click **New Webhook**.
+  </Step>
+  <Step title="Pick a channel and copy the URL">
+    Choose the channel the notifications should land in, then click **Copy Webhook URL**.
+  </Step>
+  <Step title="Paste it into Stacked">
+    Open **Settings** in Stacked, paste the URL into the webhook field, and save.
+  </Step>
+</Steps>
+
+<Tip>
+  Use a private channel. The webhook posts your successful checkouts, and that is not information you want public.
+</Tip>
+
 ## Proxies
+
+Stacked has a dedicated **Proxies** tab where you can create several proxy groups and pick which group a task uses.
+
+Residential, ISP and datacenter proxies all work. There is no universal setup: every store reacts differently, and finding the right proxy type for each site is part of dialling in your own setup.
+
+<Tip>
+  Keep one group per provider or proxy type. Switching a task from one group to another then takes a second when a site starts behaving differently.
+</Tip>
 
 ## API keys
 
-### Captcha services
+Open **Settings** in Stacked. You will find two provider sections: **Captcha Providers** and **Antibot Providers**.
 
-### Hyper
+For each one, paste your key into the provider's field, click **Set Default** on the provider you want Stacked to use, then click **Save**. You only need keys for the providers you actually use.
+
+### Captcha providers
+
+- 2Captcha
+- AntiCaptcha
+- AYCD
+- CapMonster
+- CapSolver
+- CaptchaAI
+
+### Antibot providers
+
+- **Hyper** — set as the default provider
+- Disasm
+
+<Note>
+  Next step: [Profile](/profile) to set up the details Stacked uses at checkout.
+</Note>
