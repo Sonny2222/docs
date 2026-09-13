@@ -19,47 +19,38 @@
     "tabs": [
       {
         "tab": "User Guide",
-        "groups": [
+        "pages": [
           {
-            "group": "Getting Started",
+            "group": "General",
             "pages": [
-              "introduction",
-              "getting-access",
-              "installation"
+              "general/introduction",
+              "general/installation",
+              "general/requirements"
             ]
           },
+          "profile",
+          "generator",
+          "accounts",
           {
-            "group": "Core Concepts",
+            "group": "Sites",
             "pages": [
-              "concepts/tasks",
-              "concepts/profiles",
-              "concepts/proxies"
-            ]
-          },
-          {
-            "group": "Running the Bot",
-            "pages": [
-              "guides/creating-tasks",
-              "guides/account-generator",
-              "guides/drop-monitoring",
-              "guides/notifications"
-            ]
-          },
-          {
-            "group": "Supported Sites",
-            "pages": [
-              "sites/overview",
+              "sites/amazon",
+              "sites/auchan",
+              "sites/cdiscount",
+              "sites/cultura",
+              "sites/fnac",
+              "sites/joueclub",
+              "sites/king-jouet",
+              "sites/la-grande-recre",
+              "sites/leclerc",
+              "sites/micromania",
+              "sites/monoprix",
+              "sites/philibert",
               "sites/queue-it",
-              "sites/major-retailers"
+              "sites/smyths-toys"
             ]
           },
-          {
-            "group": "Help",
-            "pages": [
-              "help/faq",
-              "help/troubleshooting"
-            ]
-          }
+          "faq"
         ]
       }
     ]
