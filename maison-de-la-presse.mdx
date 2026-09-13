@@ -1,7 +1,7 @@
 ---
 title: "Maison de la Presse"
 sidebarTitle: "Maison de la Presse"
-description: "Modes, checkout and setup notes for running Stacked on Maison de la Presse."
+description: "Queue, modes, checkout and setup notes for running Stacked on Maison de la Presse."
 ---
 
 <CardGroup cols={2}>
@@ -17,6 +17,17 @@ description: "Modes, checkout and setup notes for running Stacked on Maison de l
   Maison de la Presse checks out as a **guest**. No account is needed, so there is nothing to set up in [Accounts](/accounts) and no account group to attach to your tasks.
 </Note>
 
+## The queue
+
+Maison de la Presse puts a **waiting queue** in front of its drops, so a task does not go straight to checkout. It takes its place in line first, and buys once it is through.
+
+That is what separates the two modes:
+
+| Mode | What it does |
+| --- | --- |
+| **Normal** | Waits in the queue, then checks out as soon as it comes out the other side. |
+| **Fast** | The quicker route. You will see what it does on the drop. |
+
 ## Modes
 
 | Mode | Available |
@@ -27,13 +38,11 @@ description: "Modes, checkout and setup notes for running Stacked on Maison de l
 | Generator | — |
 | Wait | — |
 
-**Fast** is the mode to run on Maison de la Presse. Keep a few **Normal** tasks on the same drop as a fallback.
-
 There is no Generator here, and there is no need for one: checkout is done as a guest.
 
 ## Checkout
 
-Maison de la Presse supports **credit card auto checkout**: Stacked completes the payment itself, with no action from you.
+Maison de la Presse supports **credit card auto checkout**: Stacked completes the payment itself, with no action from you once a task is through the queue.
 
 ## Setting up a task
 
@@ -47,12 +56,16 @@ The task form is the same on every store — see [Tasks](/tasks) for what each f
     Paste the product URL or its SKU.
   </Step>
   <Step title="Choose the mode">
-    **Fast** for the drop itself, **Normal** on a few tasks as backup.
+    **Normal** to queue and check out, **Fast** for the quicker route.
   </Step>
   <Step title="Attach your groups">
     Profile group and proxy group. Leave the account group on **None**, since checkout is done as a guest.
   </Step>
 </Steps>
+
+<Tip>
+  Because every task has to queue, start them early. A task created after the queue has opened starts from the back of the line.
+</Tip>
 
 <Note>
   Store-specific notes will be added here as they come up: proxy types that work best, delays that hold on a drop, and anything Maison de la Presse does differently.
