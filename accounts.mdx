@@ -1,6 +1,60 @@
 ---
 title: "Accounts"
 sidebarTitle: "Accounts"
+description: "Store, import and export the retailer accounts your tasks run on."
+---
+
+The **Accounts** tab holds every store account Stacked can use, whether you created them yourself or produced them with the [Generator](/generator).
+
+## Account groups
+
+Accounts are organised into groups, and each group is tied to a store — for example a **Main Account** group for JouéClub.
+
+Stacked pre-creates a group for each supported store, and accounts produced by the generator drop straight into the group matching the store they were made on. You can create your own groups on top of those.
+
+## Adding accounts manually
+
+Use this for the stores the generator does not cover, or for accounts you already own.
+
+<Steps>
+  <Step title="Open Add Accounts">
+    Click **Add Accounts** in the Accounts tab.
+  </Step>
+  <Step title="Pick the account group">
+    Choose the group the accounts belong to, so they end up attached to the right store.
+  </Step>
+  <Step title="Paste your accounts">
+    One account per line, in `user:pass` format:
+
+    ```
+    user1@example.com:password123
+    user2@example.com:password456
+    user3@example.com:password789
+    ```
+  </Step>
+  <Step title="Confirm">
+    Click **Add Accounts**. The counter under the field tells you how many lines were read before you commit.
+  </Step>
+</Steps>
+
+## Managing accounts
+
+Accounts can be **deleted**, **exported** and **imported**. Export uses the same `user:pass` format the import expects, so a set of accounts moves between machines or backups without any conversion.
+
+<Tip>
+  Export after every generator run. Accounts are quick to lose and slow to recreate, and a plain text backup costs you nothing.
+</Tip>
+
+<Warning>
+  An exported file contains working credentials in clear text. Keep it somewhere private and never post it, including when asking for help.
+</Warning>
+
+<Note>
+  Next step: [Sites](/amazon) for what to know about each supported store.
+</Note>
+---
+title: "Accounts"
+sidebarTitle: "Accounts"
 description: "Import, store and use your retailer accounts."
 ---
 
