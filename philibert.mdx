@@ -1,7 +1,7 @@
 ---
 title: "Philibert"
 sidebarTitle: "Philibert"
-description: "Modes, checkout and setup notes for running Stacked on Philibert."
+description: "Modes, checkout and the one-to-one account rules on Philibert."
 ---
 
 <CardGroup cols={2}>
@@ -12,6 +12,19 @@ description: "Modes, checkout and setup notes for running Stacked on Philibert."
     Not documented yet
   </Card>
 </CardGroup>
+
+<Warning>
+  **Philibert enforces a strict one-to-one policy.** Read the rules below before you set up a single task — breaking them gets your orders cancelled, not just failed.
+</Warning>
+
+## The one-to-one rules
+
+| Rule | What it means |
+| --- | --- |
+| **One account, one unit** | An account cannot check out the same product twice. Philibert cancels the orders when it happens — it is their anti-bot policy. Use a separate account for every unit you want. |
+| **One account, one address** | Addresses are matched to accounts one to one. The same address cannot be spread across several accounts here. |
+
+This makes Philibert the store where your account and profile setup matters more than your task count. Running twenty tasks off three accounts will not get you twenty units, it will get your orders cancelled.
 
 ## Modes
 
@@ -25,7 +38,7 @@ description: "Modes, checkout and setup notes for running Stacked on Philibert."
 
 **Fast** is the mode to run on Philibert. Keep a few **Normal** tasks on the same drop as a fallback.
 
-There is no Generator on Philibert, so your accounts have to be created by hand and added in [Accounts](/accounts).
+There is no Generator on Philibert, so your accounts have to be created by hand and added in [Accounts](/accounts). Given the one-to-one rules, plan those accounts well ahead of a drop.
 
 ## Checkout
 
@@ -47,8 +60,8 @@ The task form is the same on every store — see [Tasks](/tasks) for what each f
   <Step title="Choose the mode">
     **Fast** for the drop itself, **Normal** on a few tasks as backup.
   </Step>
-  <Step title="Attach your groups">
-    Profile group, account group and proxy group.
+  <Step title="One account and one address per task">
+    Give each task its own account and its own address. This is the step that decides whether your orders survive.
   </Step>
 </Steps>
 
