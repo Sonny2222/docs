@@ -1,15 +1,47 @@
 ---
 title: "Profile"
 sidebarTitle: "Profile"
-description: "Create and manage the profiles used at checkout."
+description: "Create the profiles Stacked uses to check out, and organise them into groups."
 ---
 
-<Note>
-  This page is still being written.
-</Note>
+A profile holds everything Stacked needs to complete a checkout: the account it signs in with, where the order ships, and how it pays. You can create as many as you need.
 
-## What is a profile?
+## Profile groups
+
+Profiles live inside groups, and you can create as many groups as you want — for example **Main**, **ACO/PAS**, or whatever matches the way you run your drops. Each group can hold multiple profiles.
+
+<Tip>
+  Group profiles the way you actually use them. On drop day you pick a group, so a clean split saves you time when it matters.
+</Tip>
 
 ## Creating a profile
 
-## Managing profiles
+Click **Create Profile**. The form is split into four tabs and most fields speak for themselves. The points worth knowing:
+
+### Basic
+
+**Profile name** is the only required field. It is what you will see when picking a profile later, so make it recognisable.
+
+The **email** and **password** are the credentials of the retailer account this profile uses.
+
+**IMAP** lets Stacked read the mailbox tied to that account, which is what makes verification and confirmation emails usable. Note that the field asks for an **app password**, not your normal mailbox password: providers such as Gmail require you to generate a dedicated one in your account security settings.
+
+The **Discord webhook** here is per profile, so you can send a given profile's notifications to their own channel.
+
+### Shipping
+
+The delivery address and phone number for this profile.
+
+The **Use shipping as billing address** toggle is on by default. Leave it on when both addresses match; switch it off and the **Billing** tab is where you enter a different one.
+
+### Payment
+
+Pick a **payment type** — PayPal, Manual or Browser — then fill in the card details underneath.
+
+<Warning>
+  A profile contains real payment details. Treat your profiles like you would treat the card itself, and never share or post them.
+</Warning>
+
+<Note>
+  Next step: [Generator](/generator) to create accounts on supported stores.
+</Note>
