@@ -23,9 +23,9 @@
           {
             "group": "General",
             "pages": [
-              "general/introduction",
-              "general/installation",
-              "general/requirements"
+              "introduction",
+              "installation",
+              "requirements"
             ]
           },
           "profile",
@@ -34,20 +34,20 @@
           {
             "group": "Sites",
             "pages": [
-              "sites/amazon",
-              "sites/auchan",
-              "sites/cdiscount",
-              "sites/cultura",
-              "sites/fnac",
-              "sites/joueclub",
-              "sites/king-jouet",
-              "sites/la-grande-recre",
-              "sites/leclerc",
-              "sites/micromania",
-              "sites/monoprix",
-              "sites/philibert",
-              "sites/queue-it",
-              "sites/smyths-toys"
+              "amazon",
+              "auchan",
+              "cdiscount",
+              "cultura",
+              "fnac",
+              "joueclub",
+              "king-jouet",
+              "la-grande-recre",
+              "leclerc",
+              "micromania",
+              "monoprix",
+              "philibert",
+              "queue-it",
+              "smyths-toys"
             ]
           },
           "faq"
