@@ -38,6 +38,28 @@ The **Use shipping as billing address** toggle is on by default. Leave it on whe
 
 Pick a **payment type** — PayPal, Manual or Browser — then fill in the card details underneath.
 
+## Randomising a profile
+
+Two fields accept placeholders that Stacked replaces with random values at checkout, so several profiles built on the same real address do not look identical to the store.
+
+<CardGroup cols={2}>
+  <Card title="Random name" icon="user">
+    Type `random` in **First name** and **Last name** instead of a real name. Stacked generates a different name on each checkout.
+  </Card>
+  <Card title="Address jig" icon="location-dot">
+    Insert `XXX` anywhere in the address. Stacked replaces each one with a random three-letter string.
+  </Card>
+</CardGroup>
+
+**Example.** For the real address *1 rue Victor Hugo, 69002 Lyon*:
+
+| | |
+| --- | --- |
+| What you enter | `1 XXX rue Victor Hugo XXX` |
+| What the store receives | `1 RTZ rue Victor Hugo CPQ` |
+
+The parcel still reaches you: the street name, the house number and the post code are left untouched.
+
 <Warning>
   A profile contains real payment details. Treat your profiles like you would treat the card itself, and never share or post them.
 </Warning>
