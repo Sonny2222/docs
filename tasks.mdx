@@ -1,0 +1,105 @@
+---
+title: "Tasks"
+sidebarTitle: "Tasks"
+description: "Create task groups, configure a task, and understand the modes."
+---
+
+Tasks are what actually run on drop day. Everything below is common to every supported store; the [Sites](/amazon) pages only list what is specific to each one.
+
+## Task groups
+
+In the **Tasks** tab you first create a group — for example one per store, or one per drop. Groups are shared across all sites, so you are free to organise them the way you work.
+
+Once a group exists, click **New Task** inside it.
+
+## Configuring a task
+
+The counter at the top sets how many tasks to create at once. **They all share the settings below**, so create a batch per configuration rather than one giant batch.
+
+| Field | What it does |
+| --- | --- |
+| **Site** *(required)* | The store this task targets. |
+| **Store** | Only for the few modules that support in-store collection. Enter the ID of the store you want. |
+| **Input / Keyword / URL** *(required)* | The product URL, a keyword, or a SKU. Leaving it empty puts the task in **Wait mode** — see below. |
+| **Mode** | How the task runs. Options depend on the site. |
+| **Payment method** | Credit card or PayPal. |
+| **Min / Max price** | Guard rails. The task will not check out outside this range. |
+| **Quantity** | How many units to buy. |
+| **Delay (ms)** | Time between attempts, 3000 by default. Adapt it to the drop and the store. |
+| **Profile group / Profile** | Which profiles the task checks out with. Leave **Profile** on *Any* to draw from the whole group. |
+| **Account group** | Which store accounts the task signs in with. |
+| **Proxy group** | Which proxies the task runs through. |
+
+## Modes
+
+<CardGroup cols={2}>
+  <Card title="Normal" icon="circle-play">
+    The standard flow.
+  </Card>
+  <Card title="Fast" icon="bolt">
+    Uses the bypass or the quicker route available on that store.
+  </Card>
+  <Card title="Search" icon="magnifying-glass">
+    Finds the product on the site from a keyword instead of a URL.
+  </Card>
+  <Card title="Wait" icon="hourglass">
+    Monitor mode. See below.
+  </Card>
+  <Card title="Generator" icon="user-plus">
+    Account generation. See [Generator](/generator).
+  </Card>
+  <Card title="Preorder / Raffle" icon="ticket">
+    Store-specific entries, on Smyths Toys and Amazon.
+  </Card>
+</CardGroup>
+
+<Tip>
+  **Fast** is the recommended mode, but do not put every task on it. Mix in some **Normal** tasks on the same drop so you are not exposed if the fast route fails.
+</Tip>
+
+### Wait mode (monitor)
+
+Leave **Input / Keyword / URL** empty and the task waits instead of targeting a product.
+
+The point is to chain tasks. Run one task **with** a product and three **without**: the moment the first one carts the product, the three waiting tasks pick it up and go for it too.
+
+## Modes available per site
+
+| Site | Normal | Fast | Search | Generator | Wait | Other |
+| --- | :-: | :-: | :-: | :-: | :-: | --- |
+| Amazon | ✅ | | | | | Raffle |
+| Auchan | ✅ | | | ✅ | | |
+| Cdiscount | ✅ | ✅ | | ✅ | | |
+| Cultura | ✅ | | | ✅ | | |
+| E.Leclerc | ✅ | ✅ | | ✅ | | |
+| Fnac | ✅ | ✅ | | ✅ | | |
+| JouéClub | ✅ | | ✅ | ✅ | ✅ | |
+| King Jouet | ✅ | ✅ | | | | |
+| La Grande Récré | ✅ | | ✅ | ✅ | ✅ | |
+| Maison de la Presse | ✅ | ✅ | | | | |
+| Micromania | ✅ | | | | | |
+| Monoprix | ✅ | | ✅ | ✅ | | |
+| Philibert | ✅ | ✅ | | | | |
+| Queue-IT | ✅ | | | | | |
+| Smyths Toys | ✅ | ✅ | | | | Preorder |
+
+## Payment and checkout
+
+Two things to distinguish:
+
+- **Auto checkout (ACO)** — Stacked completes the payment itself. Credit card only.
+- **Payment link** — Stacked carts the item and hands you a link to finish the payment yourself, with PayPal or a card.
+
+| Site | Checkout |
+| --- | --- |
+| Cultura | Credit card, auto checkout |
+| Fnac | Credit card, auto checkout |
+| King Jouet | Credit card, auto checkout |
+| Maison de la Presse | Credit card, auto checkout |
+| Smyths Toys | Credit card auto checkout · PayPal payment link |
+| JouéClub | Credit card and PayPal, payment link |
+| La Grande Récré | Credit card and PayPal, payment link |
+
+<Note>
+  This table is still being completed. Stores not listed yet will be added as they are confirmed.
+</Note>
