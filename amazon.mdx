@@ -1,15 +1,58 @@
 ---
 title: "Amazon"
 sidebarTitle: "Amazon"
-description: "Running Tcktio tasks on Amazon."
+description: "Modes, checkout and setup notes for running Stacked on Amazon."
 ---
 
+<CardGroup cols={2}>
+  <Card title="Modes" icon="sliders">
+    Normal · Raffle
+  </Card>
+  <Card title="Checkout" icon="credit-card">
+    Not documented yet
+  </Card>
+</CardGroup>
+
+## Modes
+
+| Mode | Available |
+| --- | :-: |
+| Normal | ✅ |
+| Fast | — |
+| Search | — |
+| Generator | — |
+| Wait | — |
+| Raffle | ✅ |
+
+Amazon runs on **Normal**, plus a **Raffle** mode for releases that are drawn rather than sold on a first-come basis.
+
+There is no Generator on Amazon, so your accounts have to be created by hand and added in [Accounts](/accounts).
+
+## Checkout
+
 <Note>
-  This page is still being written.
+  The checkout method for Amazon has not been documented yet. It will be added here once confirmed.
 </Note>
 
-## Before you start
+## Setting up a task
 
-## Task setup
+The task form is the same on every store — see [Tasks](/tasks) for what each field does. For Amazon:
 
-## Notes and limitations
+<Steps>
+  <Step title="Pick the site">
+    Select **Amazon** in the Site dropdown.
+  </Step>
+  <Step title="Enter the product">
+    Paste the product URL or its ASIN.
+  </Step>
+  <Step title="Choose the mode">
+    **Normal** for a standard release, **Raffle** when the drop is a draw.
+  </Step>
+  <Step title="Attach your groups">
+    Profile group, account group and proxy group.
+  </Step>
+</Steps>
+
+<Note>
+  Store-specific notes will be added here as they come up: proxy types that work best, delays that hold on a drop, and anything Amazon does differently.
+</Note>
