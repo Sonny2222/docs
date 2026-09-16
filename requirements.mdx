@@ -60,6 +60,20 @@ For each one, paste your key into the provider's field, click **Set Default** on
 | **Hyper** (default) | [hypersolutions.co](https://hypersolutions.co) |
 | Disasm | |
 
+## Whitelist your sites
+
+Hyper and Disasm only work on the sites registered in your account with them. Three stores have to be whitelisted in **both** provider dashboards before you run a task on them:
+
+```
+https://www.fnac.com
+https://www.king-jouet.com
+https://www.smythstoys.com
+```
+
+<Warning>
+  Do this ahead of a drop, not during one. A task on a store you have not whitelisted fails in a way that looks like a bot problem, when it is only a missing entry in your provider dashboard.
+</Warning>
+
 <Note>
   Next step: [Profile](/profile) to set up the details Stacked uses at checkout.
 </Note>
