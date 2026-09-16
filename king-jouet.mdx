@@ -1,7 +1,7 @@
 ---
 title: "King Jouet"
 sidebarTitle: "King Jouet"
-description: "Modes, checkout and setup notes for running Stacked on King Jouet."
+description: "Modes, checkout options and setup notes for running Stacked on King Jouet."
 ---
 
 <CardGroup cols={2}>
@@ -9,7 +9,7 @@ description: "Modes, checkout and setup notes for running Stacked on King Jouet.
     Normal · Fast
   </Card>
   <Card title="Checkout" icon="credit-card">
-    Credit card, auto checkout
+    Card auto checkout · CART link
   </Card>
 </CardGroup>
 
@@ -27,9 +27,20 @@ description: "Modes, checkout and setup notes for running Stacked on King Jouet.
 
 There is no Generator on King Jouet, so your accounts have to be created by hand and added in [Accounts](/accounts).
 
+<Note>
+  King Jouet has to be whitelisted in your Hyper and Disasm dashboards before you run a task on it. See [Requirements](/requirements).
+</Note>
+
 ## Checkout
 
-King Jouet supports **credit card auto checkout**: Stacked completes the payment itself, with no action from you.
+King Jouet gives you two routes, chosen in the **Payment method** field of the task:
+
+| Payment method | What happens |
+| --- | --- |
+| **Credit card** | Auto checkout. Stacked completes the payment itself, with no action from you. |
+| **CART** | Stacked sends you a link that drops you straight on the final payment step. You enter your card on the site and press pay. |
+
+**CART** is the slower of the two, since it needs you at the keyboard. Keep it for the times it helps rather than as your default.
 
 ## Setting up a task
 
@@ -45,8 +56,8 @@ The task form is the same on every store — see [Tasks](/tasks) for what each f
   <Step title="Choose the mode">
     **Fast** for the drop itself, **Normal** on a few tasks as backup.
   </Step>
-  <Step title="Attach your groups">
-    Profile group, account group and proxy group. Make sure the profile carries a card, since King Jouet checks out automatically.
+  <Step title="Pick your payment method">
+    **Credit card** for a hands-off checkout, **CART** to finish the payment yourself. If you go with credit card, make sure the profile carries one.
   </Step>
 </Steps>
 
