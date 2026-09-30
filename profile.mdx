@@ -44,9 +44,13 @@ Filling the form profile by profile gets old fast. **Bulk import** takes a CSV i
 
 It is also the easiest way to change many profiles at the same time — edit the column in your spreadsheet, import again, done.
 
+<Card title="Download the CSV template" icon="file-csv" href="https://raw.githubusercontent.com/Sonny2222/docs/main/files/profiles_format.csv">
+  `profiles_format.csv`: the header row Stacked expects, plus one example profile. If it opens in your browser instead of downloading, right-click the card and choose **Save Link As**.
+</Card>
+
 <Steps>
   <Step title="Prepare your CSV">
-    Fill in your profiles in a CSV file that follows the Stacked profile format, one profile per row.
+    Open the template in Excel, Numbers or Google Sheets and fill in one profile per row. Keep the header row exactly as it is, and save the file as CSV.
   </Step>
   <Step title="Open Profiles and pick a group">
     Go to **Profiles**. The **Groups** column lists your profile groups; click **+** to create a new one if needed.
@@ -59,6 +63,20 @@ It is also the easiest way to change many profiles at the same time — edit the
 <Frame caption="Drag the CSV onto a group in Profiles, then release when it shows Drop CSV to import.">
   <img src="/images/profiles-bulk-import.png" alt="Dragging a CSV file onto a profile group in Stacked, with the Drop CSV to import hint" />
 </Frame>
+
+<Accordion title="Template columns">
+
+```csv profiles_format.csv
+name,email,password,imapEmail,imapPassword,webhook,shipping.firstName,shipping.lastName,shipping.line1,shipping.line2,shipping.houseNumber,shipping.state,shipping.city,shipping.postcode,shipping.country,shipping.phone,billing.firstName,billing.lastName,billing.line1,billing.line2,billing.houseNumber,billing.state,billing.city,billing.postcode,billing.country,billing.phone,payment.cardHolder,payment.cardNumber,payment.expiryMonth,payment.expiryYear,payment.cvc
+imported,random@gmail.com,,,,,random,random,,,,,,,France,random,,,,,,,,,,,,,,,
+```
+
+  - `name`: the profile name shown in Stacked.
+  - `email`, `password`: the retailer account this profile uses. `imapEmail`, `imapPassword`: the mailbox Stacked reads, with an app password.
+  - `shipping.*` and `billing.*`: the two addresses.
+  - `payment.*`: the card details.
+
+</Accordion>
 
 <Tip>
   A spreadsheet is where the placeholders below really pay off: you can apply `random` and `XXX` across dozens of rows in one go.
