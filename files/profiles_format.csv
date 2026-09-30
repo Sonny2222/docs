@@ -1,0 +1,2 @@
+name,email,password,imapEmail,imapPassword,webhook,shipping.firstName,shipping.lastName,shipping.line1,shipping.line2,shipping.houseNumber,shipping.state,shipping.city,shipping.postcode,shipping.country,shipping.phone,billing.firstName,billing.lastName,billing.line1,billing.line2,billing.houseNumber,billing.state,billing.city,billing.postcode,billing.country,billing.phone,payment.cardHolder,payment.cardNumber,payment.expiryMonth,payment.expiryYear,payment.cvc
+imported,random@gmail.com,,,,,random,random,,,,,,,France,random,,,,,,,,,,,,,,,
