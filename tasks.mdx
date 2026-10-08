@@ -20,7 +20,7 @@ The counter at the top sets how many tasks to create at once. **They all share t
 | --- | --- |
 | **Site** *(required)* | The store this task targets. |
 | **Store** | Only for the few modules that support in-store collection. Enter the ID of the store you want. |
-| **Input / Keyword / URL** *(required)* | The product URL, a keyword, or a SKU. Leaving it empty puts the task in **Wait mode** — see below. |
+| **Input / Keyword / URL** | The product URL, a keyword, or a SKU. Leave it empty to start the task in **Wait mode** — see below. |
 | **Mode** | How the task runs. Options depend on the site. |
 | **Payment method** | Credit card or PayPal. |
 | **Min / Max price** | Guard rails. The task will not check out outside this range. |
@@ -42,9 +42,6 @@ The counter at the top sets how many tasks to create at once. **They all share t
   <Card title="Search" icon="magnifying-glass">
     Finds the product on the site from a keyword instead of a URL.
   </Card>
-  <Card title="Wait" icon="hourglass">
-    Monitor mode. See below.
-  </Card>
   <Card title="Generator" icon="user-plus">
     Account generation. See [Generator](/generator).
   </Card>
@@ -57,31 +54,31 @@ The counter at the top sets how many tasks to create at once. **They all share t
   **Fast** is the recommended mode, but do not put every task on it. Mix in some **Normal** tasks on the same drop so you are not exposed if the fast route fails.
 </Tip>
 
-### Wait mode (monitor)
+### Wait mode
 
-Leave **Input / Keyword / URL** empty and the task waits instead of targeting a product.
+Leave **Input / Keyword / URL** empty and the task starts in **Wait mode**: it does nothing until it receives an input, then runs with it straight away.
 
-The point is to chain tasks. Run one task **with** a product and three **without**: the moment the first one carts the product, the three waiting tasks pick it up and go for it too.
+This works on every site.
 
 ## Modes available per site
 
-| Site | Normal | Fast | Search | Generator | Wait | Other |
-| --- | :-: | :-: | :-: | :-: | :-: | --- |
-| Amazon | ✅ | | | | | Raffle |
-| Auchan | ✅ | | | ✅ | | |
-| Cdiscount | ✅ | ✅ | | ✅ | | |
-| Cultura | ✅ | | | ✅ | | |
-| E.Leclerc | ✅ | ✅ | | ✅ | | |
-| Fnac | ✅ | ✅ | | ✅ | | |
-| JouéClub | ✅ | | ✅ | ✅ | ✅ | |
-| King Jouet | ✅ | ✅ | | | | |
-| La Grande Récré | ✅ | | ✅ | ✅ | ✅ | |
-| Maison de la Presse | ✅ | ✅ | | | | |
-| Micromania | ✅ | | | | | |
-| Monoprix | ✅ | | ✅ | ✅ | | |
-| Philibert | ✅ | ✅ | | | | |
-| Queue-IT | ✅ | | | | | |
-| Smyths Toys | ✅ | ✅ | | | | Preorder |
+| Site | Normal | Fast | Search | Generator | Other |
+| --- | :-: | :-: | :-: | :-: | --- |
+| Amazon | ✅ | | | | Raffle |
+| Auchan | ✅ | | | ✅ | |
+| Cdiscount | ✅ | ✅ | | ✅ | |
+| Cultura | ✅ | | | ✅ | |
+| E.Leclerc | ✅ | ✅ | | ✅ | |
+| Fnac | ✅ | ✅ | | ✅ | |
+| JouéClub | ✅ | | ✅ | ✅ | |
+| King Jouet | ✅ | ✅ | | | |
+| La Grande Récré | ✅ | | ✅ | ✅ | |
+| Maison de la Presse | ✅ | ✅ | | | |
+| Micromania | ✅ | | | | |
+| Monoprix | ✅ | | ✅ | ✅ | |
+| Philibert | ✅ | ✅ | | | |
+| Queue-IT | ✅ | | | | |
+| Smyths Toys | ✅ | ✅ | | | Preorder |
 
 ## Payment and checkout
 
