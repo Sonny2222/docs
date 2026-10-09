@@ -2,7 +2,11 @@
   "$schema": "https://mintlify.com/docs.json",
   "name": "Stacked",
   "theme": "almond",
-  "favicon": "https://media.brand.dev/99e6561f-1a7c-4a78-9192-edfa468104cb.png",
+  "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/images/logo-light.svg",
+    "dark": "/images/logo-dark.svg"
+  },
   "colors": {
     "primary": "#7c7c7c",
     "light": "#F2EDE4",
@@ -22,6 +26,7 @@
         "pages": [
           {
             "group": "General",
+            "icon": "book-open",
             "pages": [
               "introduction",
               "installation",
@@ -34,6 +39,7 @@
           "tasks",
           {
             "group": "Sites",
+            "icon": "store",
             "pages": [
               "amazon",
               "auchan",
