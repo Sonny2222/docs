@@ -56,7 +56,18 @@ The counter at the top sets how many tasks to create at once. **They all share t
 
 ### Wait mode
 
-Leave **Input / Keyword / URL** empty and the task starts in **Wait mode**: it does nothing until it receives an input, then runs with it straight away.
+Leave **Input / Keyword / URL** empty and the task starts in **Wait mode**: it shows **Waiting for product** and does nothing until it gets a product. Two things release it:
+
+<CardGroup cols={2}>
+  <Card title="You edit the input" icon="pen">
+    Add the product URL, keyword or SKU to the task. It starts straight away.
+  </Card>
+  <Card title="Another task carts the product" icon="link">
+    As soon as a task with an input carts the product, the tasks in Wait mode pick it up and start.
+  </Card>
+</CardGroup>
+
+**Example.** You create 10 tasks: 2 with the product URL, 8 with the input left empty. The 8 empty ones show *Waiting for product*. The moment one of the 2 carts the product, the 8 waiting tasks start on it too.
 
 This works on every site.
 
